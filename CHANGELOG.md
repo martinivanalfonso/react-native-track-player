@@ -1,3 +1,12 @@
+## [4.0.2](https://github.com/doublesymmetry/react-native-track-player/compare/v4.0.1...v4.0.2) (2023-12-14)
+
+
+### Bug Fixes
+
+* audio session ([6053c4a](https://github.com/doublesymmetry/react-native-track-player/commit/6053c4abbe4c35c84f8568e62336f85dc42c6657))
+
+
+
 # [4.0.1](https://github.com/doublesymmetry/react-native-track-player/compare/v4.0.0...v4.0.1) (2023-10-31)
 
 * **android:** Fix: notification dissapearing in background

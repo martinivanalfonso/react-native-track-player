@@ -526,7 +526,15 @@ public class RNTrackPlayer: RCTEventEmitter, AudioSessionControllerDelegate {
 
     @objc(play:rejecter:)
     public func play(resolve: RCTPromiseResolveBlock, reject: RCTPromiseRejectBlock) {
+        print("Play executed")
         if (rejectWhenNotInitialized(reject: reject)) { return }
+        let audioSession = AVAudioSession.sharedInstance()
+        do {
+            // Set the audio session category, mode, and options.
+            try audioSession.setCategory(.playback, mode: .default, options: nil)
+        } catch {
+            print("Failed to set audio session category.")
+        }
         player.play()
         resolve(NSNull())
     }
